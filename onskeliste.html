@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ønskeliste</title>
+    <link rel="stylesheet" href="onskeliste.css">
+    <style>
+        
+       
+    </style>
+</head>
+<body>
+    <div class="sidebar"></div>
+    <div class="main-content">
+        <header>
+            <h1>Min Ønskeliste</h1>
+        </header>
+        <main class="wishlist-container">
+            <h2>Legg til ønskene dine</h2>
+            <ul id="wishlist" class="wishlist"></ul>
+            <input 
+                type="text" 
+                id="wish-input" 
+                placeholder="Skriv ønsket ditt her og trykk Enter" 
+                maxlength="100">
+            <div class="button-group">
+                <button id="send-button">Send til Julenissen</button>
+                <button id="print-button">Skriv ut Ønskeliste</button>
+            </div>
+        </main>
+
+        <!-- Knapper for navigasjon -->
+        <div class="button-container">
+            <a href="index.html" class="btn">Tilbake til Hjem</a>
+            <a href="ansatte.html" class="btn">Se Ansatte</a>
+        </div>
+
+        <footer>
+            <div class="socials">
+                <a href="#" class="icon">Instagram</a>
+                <a href="#" class="icon">Facebook</a>
+            </div>
+            <div class="info">
+                <p>Nissens adresse: Nordpolen, 0001 Juleland</p>
+                <p>© 2024 Nissens Verksted</p>
+            </div>
+        </footer>
+    </div>
+    <script src="onskeliste.js"></script>
+</body>
+</html>
+

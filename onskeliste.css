@@ -1,0 +1,177 @@
+/* Generell stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('img/onskelist.jpg'); /* Bakgrunnsbilde */
+    background-size: cover; /* Sørger for at bildet dekker hele siden */
+    background-repeat: no-repeat; /* Hindrer gjentakelse */
+    background-position: center;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    background-image: url('img/side.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Hovedinnhold */
+.main-content {
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: (); /*  */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Ønskeliste Container */
+
+.wishlist-container {
+    text-align: center; /* Sentrer tekst og inline-elementer */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Sentrerer horisontalt */
+    justify-content: center; /* Sentrerer vertikalt */
+    padding: 20px;
+    margin: auto;
+}
+
+.wishlist {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+/* Tekstfelt */
+
+
+#wish-input {
+    font-size: 1.2rem; /* Øk fontstørrelsen */
+    padding: 12px; /* Øk høyden på feltet */
+    text-align: center; /* Sentrer teksten i feltet */
+    border: 2px solid #8b0000; /* Behold rammen */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px; /* Behold maks bredde */
+}
+
+/* Knapp-gruppe */
+.button-group {
+    display: flex;
+    justify-content: center; /* Sentrerer knappene horisontalt */
+    gap: 15px; /* Avstand mellom knappene */
+    margin-top: 10px; /* Liten avstand fra input */
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button-group button:hover {
+    background-color: #004d00;
+}
+
+/* Footer */
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer .socials .icon {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials .icon:hover {
+    text-decoration: underline;
+}
+
+footer .info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #f5e6d3;
+}
+
+/* Knappene nederst */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #006400; /* Mørk grønn */
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004d00; /* Mørkere grønn */
+}
+
+.wishlist-container h2 {
+    font-size: 3rem; /* Gjør H2 større */
+    color: #006400; /* Mørk grønn farge for konsistens */
+    text-align: center; /* Sentrer teksten */
+    margin: 20px 0; /* Legg til litt luft over og under */
+}
+
+header h1 {
+    font-size: 3rem; /* Større skriftstørrelse */
+    color: #8b0000; /* Dyp rød farge */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skygge-effekt */
+    font-weight: bold; /* Fet tekst */
+    text-align: center; /* Sentrer teksten */
+    line-height: 1.2; /* Justerer linjehøyden */
+    letter-spacing: 2px; /* Avstand mellom bokstavene */
+    text-transform: uppercase; /* Store bokstaver */
+    padding: 20px; /* Luft rundt teksten */
+    margin: 0; /* Ingen ekstra margin */
+    border-bottom: 3px solid #006400; /* Grønn linje under teksten */
+    background-color: rgba(245, 230, 211, 0.7); /* Lys beige bakgrunn med opasitet */
+    display: inline-block; /* Begrens bredde til teksten */
+    border-radius: 10px; /* Runde hjørner */
+}

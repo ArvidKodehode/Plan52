@@ -1,0 +1,247 @@
+/* Generell stil */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Gjør plass til sidebar */
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3; /* Lys beige bakgrunn */
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    background-image: url('img/side.jpg'); /* Sidebar bakgrunn */
+    background-size: cover; /* Sørger for at bildet dekker hele bredden */
+    background-repeat: repeat-y; /* Gjentar bildet vertikalt */
+    width: 150px; /* Justert bredde for sidebar */
+    height: 100vh; /* Full høyde av skjermen */
+    position: fixed; /* Holder sidebar på plass */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Sørger for at sidebar alltid ligger bak innhold */
+}
+
+/* Hovedinnhold */
+.main-content {
+    margin-left: 150px; /* Justert margin til sidebarens nye bredde */
+    width: calc(100% - 150px); /* Justerer bredden på hovedinnholdet */
+    padding: 20px; /* Ekstra padding for bedre plass */
+}
+
+/* Tekstjustering for venstre kolonne */
+.left {
+    padding-left: 20px; /* Ekstra padding for tekst mot venstre */
+}
+
+.left .info, .workshop p {
+    margin-left: 10px; /* Gir tekst i venstre kolonne mer luft */
+}
+
+/* Tekstjustering for høyre kolonne */
+.right {
+    padding-left: 20px; /* Ekstra padding for tekst mot venstre */
+    padding-right: 10px; /* Valgfri padding for bedre balanse */
+}
+
+
+/* Header */
+header {
+    background-image: url('img/topgiri.png'); /* Header-bakgrunn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    height: 250px; /* Høyden på header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for h1 i header */
+header h1 {
+    font-size: 3rem; /* Størrelse på teksten */
+    color: #8b0000; /* Dyp rød farge */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skygge-effekt */
+    font-weight: bold; /* Fet tekst */
+    text-align: center; /* Sentrerer teksten i headeren */
+    line-height: 1.2; /* Justerer linjehøyden */
+    letter-spacing: 2px; /* Avstand mellom bokstavene */
+    text-transform: uppercase; /* Gjør teksten til store bokstaver */
+    padding: 20px; /* Indre marger for mer luft rundt teksten */
+    margin: 0; /* Fjern ytre marger for å holde teksten innen headerens område */
+    border-bottom: 3px solid #006400; /* Grønn linje under teksten */
+    background-color: rgba(245, 230, 211, 0.7); /* Lys beige bakgrunn med 70% opasitet */
+    display: inline-block; /* Begrens bakgrunnsfargen til teksten */
+    border-radius: 10px; /* Runde hjørner på bakgrunnen */
+}
+
+
+/* Innhold */
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/* Venstre kolonne */
+.left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left .profile-image {
+    max-width: 200px; /* Størrelse på Nissens bilde */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Runder kantene */
+    border: 3px solid #8b0000; /* Rød ramme */
+}
+
+.left .info h2 {
+    font-size: 1.8rem;
+    color: #006400; /* Mørk grønn */
+}
+
+.left .info p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Nisseverksted */
+.workshop img {
+    max-width: 300px; /* Størrelse på verksted-bildet */
+    margin: 20px auto;
+    display: block; /* Sentrer bildet */
+    border-radius: 10px; /* Myk avrunding */
+    border: 3px solid #006400; /* Grønn ramme */
+}
+
+.workshop p {
+    text-align: center; /* Sentrer teksten */
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Høyre kolonne */
+.right {
+    flex: 2;
+    padding: 20px;
+}
+
+.right h2 {
+    font-size: 2rem;
+    color: #8b0000; /* Rød farge */
+}
+
+.right p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.right .animal-image {
+    max-width: 300px; /* Størrelse på reinsdyrbildet */
+    margin: 20px 0;
+    border-radius: 10px; /* Myk avrunding */
+    border: 3px solid #006400; /* Grønn ramme */
+}
+
+.nissemor-image {
+    max-width: 150px; /* Nissemor sitt bilde */
+    height: auto; /* Behold proporsjoner */
+    display: block; /* Sentrer bildet */
+    margin: 10px auto; /* Sentrer horisontalt */
+    border-radius: 15px; /* Myk avrunding */
+    border: 3px solid #8b0000; /* Rød ramme */
+}
+
+/* Footer */
+footer {
+    background-color: #006400; /* Dyp grønn */
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+footer .socials .icon {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials .icon:hover {
+    text-decoration: underline;
+}
+
+footer .info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #f5e6d3; /* Beige tekst */
+}
+
+/* Knappene */
+.button-container {
+    text-align: center; /* Sentrerer knappene horisontalt */
+    margin: 20px 0; /* Avstand over og under knappene */
+}
+
+.btn {
+    display: inline-block; /* Gjør knappene inline-blokker */
+    margin: 10px; /* Avstand mellom knappene */
+    padding: 10px 20px; /* Indre marger for knappene */
+    font-size: 1rem; /* Juster fontstørrelsen */
+    color: white; /* Hvit tekst */
+    background-color: #006400; /* Mørk grønn bakgrunn */
+    text-decoration: none; /* Fjern understreking */
+    border-radius: 20px; /* Runde hjørner */
+    transition: background-color 0.3s ease; /* Myk overgang ved hover */
+}
+
+.btn:hover {
+    background-color: #004d00; /* Mørkere grønn ved hover */
+}
+
+/* Responsiv justering for mobil */
+@media (max-width: 600px) {
+    .btn {
+        width: 80%; /* Knappene blir bredere på små skjermer */
+        padding: 15px 0; /* Ekstra padding for mobil */
+        font-size: 1.2rem; /* Større fontstørrelse for lesbarhet */
+    }
+}
+
+.nettradio {
+    text-align: center;
+    background-color: #006400; /* Lys beige bakgrunn */
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #006400; /* Grønn ramme */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nettradio h2 {
+    font-size: 1.8rem;
+    color: #8b0000; /* Dyp rød tekst */
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px; /* Tilpasset spillerens størrelse */
+    outline: none;
+    border-radius: 5px;
+}
+
+/* Google Translate Widget */
+#google_translate_element {
+    text-align: right;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.goog-te-banner-frame {
+    display: none !important; /* Fjerner toppbanneret fra Google Translate */
+}
